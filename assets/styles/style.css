@@ -1,0 +1,512 @@
+:root {
+    --color1: #141414;
+    --color2: beige;
+    --color3: #989898;
+    --color4: #90c0f7;
+    --color5: #0e50bb;
+    --color6: #000c1f;
+    --color7: #0e1a25;
+    --color8: #1f1f1f;
+    --color9: #fe542e;
+    --color10: #f09619;
+    --color11: #111d31;
+    --color12: #212b36;
+    --color13: #6fb1fc;
+}
+
+body {
+    margin: 0;
+}
+
+body,
+.card {
+    background-color: var(--color1)
+}
+footer{
+    background-color: var(--color8);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    font-family: 'Golos Text';
+}
+
+.card .container p {
+    color: var(--color3)
+}
+
+.card .container .card-body {
+    padding-left: 0;
+}
+
+.card .container h1 {
+    font-weight: 700;
+}
+
+.card .container .h-100 img {
+    border-radius: 8px;
+}
+
+.card .container .h-100 h5 {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.card .container .h-100 p {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.card .container .h-100 {
+    border: none
+}
+
+.card {
+    border: none;
+}
+
+.card {
+    margin-bottom: 70px;
+}
+
+.start {
+    margin-bottom: 100px;
+}
+
+.start .container {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.start .container h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.start .container .rating {
+    font-size: 16px;
+    margin-right: 3%;
+    font-weight: 700;
+}
+
+.start .container .itd {
+    font-size: 14px;
+    color: var(--color3);
+    margin-right: 3%;
+    font-weight: 500;
+}
+
+.start .container .age {
+    font-size: 12px;
+    color: var(--color3);
+    outline: 1px solid;
+    font-weight: 500;
+}
+
+.start .container .categories p {
+    margin-bottom: 0;
+}
+
+.start .container .categories {
+    align-items: end;
+    margin-bottom: 12px;
+}
+
+.start .container .blue-button {
+    background: linear-gradient(to right, var(--color5), var(--color4));
+    font-size: 14px;
+    gap: 12px;
+    justify-content: center;
+    width: 250px;
+    font-weight: 600;
+    height: 55px;
+}
+
+.start .container .description {
+    font-size: 17px;
+}
+
+.start .container .black-button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    width: 140px;
+    height: 55px;
+    background: linear-gradient(to right, var(--color6), var(--color7));
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.start .container .red-button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    width: 50px;
+    height: 55px;
+    background: linear-gradient(to right, var(--color6), var(--color7));
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.start .container .film {
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+}
+
+.podborka .container {
+    background-image: url(../img/6.jpg);
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.podborka .container .blue-button {
+    background: linear-gradient(to right, var(--color5), var(--color4));
+    font-size: 14px;
+    gap: 12px;
+    justify-content: center;
+    width: 250px;
+    font-weight: 600;
+    height: 55px;
+}
+
+.podborka .container h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.podborka .container p {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.podborka .container .podka {
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-bottom: 12%;
+}
+
+.podborka {
+    margin-bottom: 100px;
+}
+
+.opisanie .container h1 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.opisanie .container p {
+    font-size: 16px;
+}
+
+.opisanie .container .color {
+    font-size: 40px;
+    margin-bottom: 0;
+    font-weight: 700;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, var(--color5), var(--color4));
+}
+
+.opisanie {
+    background-color: var(--color8);
+}
+
+.top .container img {
+    border-radius: 10px;
+}
+
+.top .container h1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.top .container .rating {
+    font-size: 16px;
+    margin-right: 3%;
+    font-weight: 700;
+}
+
+.top .container .itd {
+    font-size: 14px;
+    color: var(--color3);
+    margin-right: 3%;
+    font-weight: 500;
+}
+
+.top .container .age {
+    font-size: 12px;
+    color: var(--color3);
+    outline: 1px solid;
+    font-weight: 500;
+}
+
+.top .container .categories p {
+    margin-bottom: 0;
+}
+
+.top .container .categories {
+    align-items: end;
+    margin-bottom: 12px;
+}
+
+.top .container .blue-button {
+    background: linear-gradient(to right, var(--color5), var(--color4));
+    font-size: 14px;
+    gap: 12px;
+    justify-content: center;
+    width: 250px;
+    font-weight: 600;
+    height: 55px;
+}
+
+.top .container .description {
+    font-size: 17px;
+}
+
+.top .container .black-button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    width: 140px;
+    height: 55px;
+    background: linear-gradient(to right, var(--color6), var(--color7));
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .container .red-button {
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    width: 50px;
+    height: 55px;
+    background: linear-gradient(to right, var(--color6), var(--color7));
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.top .container .price {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.top .container .new {
+    font-size: 12px;
+    background: linear-gradient(to right, var(--color9), var(--color10));
+    width: 180px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+label {
+    color: white;
+    font-size:14px;
+    font-family: 'Golos Text';
+    font-weight: 600;
+}
+
+.perecluch {
+    color: white;
+}
+
+#input1:checked~#label1,
+#input2:checked~#label2,
+#input3:checked~#label3 {
+    text-decoration: underline;
+    text-decoration-color: var(--color4);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 7px;
+}
+
+.top .container input {
+    display: none;
+}
+
+.top .perecluch {
+    width: 100%;
+    overflow: hidden;
+}
+
+.top .line {
+    width: 300%;
+    display: flex;
+}
+
+.top .text {
+    width: calc(100%/3);
+    transition: 1s;
+    font-size:15px;
+    font-family: 'Golos Text';
+}
+.top{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#input1:checked~.perecluch .text {
+    transition: 1s;
+    transform: translateX(0);
+}
+
+#input2:checked~.perecluch .text {
+    transition: 1s;
+    transform: translateX(-100%);
+}
+
+#input3:checked~.perecluch .text {
+    transition: 1s;
+    transform: translateX(-200%);
+}
+
+@keyframes carousel {
+
+    0%,
+    20% {
+        transform: translateX(0);
+    }
+
+    30%,
+    70% {
+        transform: translateX(-100%);
+    }
+
+    80%,
+    100% {
+        transform: translateX(-200%);
+    }
+}
+.subsribe .container h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.subsribe .container p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.subsribe .container .form-control{
+    background:var(--color1) ;
+    border-color: var(--color3);
+    font-size: 16px;
+    font-weight: 400;
+    color:white;
+}
+.subsribe .container button{
+    background: linear-gradient(to right, var(--color5), var(--color4));
+    font-size: 14px;
+    gap: 12px;
+    justify-content: center;
+    width: 230px;
+    font-weight: 600;
+    height: 55px;
+}
+.subsribe{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.subsribe .container .vse{
+    background: linear-gradient(to right, var(--color11), var(--color12));
+    width: 100%;
+}
+.subsribe .container .vse h1{
+    color:var(--color13)
+}
+@media (max-width: 1200px) {
+    .container{
+        width: 950px;
+    }
+}
+@media (max-width: 992px) {
+    .container{
+        width: 720px;
+    }
+}
+@media (max-width: 768px) {
+    .container{
+        width:  540px;
+    }
+    .subsribe .container h1{
+        font-size:35px;
+    }
+}
+@media (max-width: 576px) {
+    .container{
+        width:  98%;
+    }
+    .start .container h1{
+        font-size:35px;
+    }
+    .start .container .description{
+        font-size:14px;
+    }
+    .start .container .blue-button{
+        background: linear-gradient(to right, var(--color5), var(--color4));
+        font-size: 14px;
+        gap: 12px;
+        justify-content: center;
+        width: 180px;
+        font-weight: 600;
+        height: 55px;
+    }
+    .podborka .container h1{
+        font-size:35px;
+    }
+    .podborka .container p{
+        font-size:14px;
+    }
+    .top .container .blue-button{
+        background: linear-gradient(to right, var(--color5), var(--color4));
+        font-size: 14px;
+        gap: 12px;
+        justify-content: center;
+        width: 180px;
+        font-weight: 600;
+        height: 55px;
+    }
+    .top .container h1{
+        font-size:35px;
+    }
+    .subsribe .container h1{
+        font-size:35px;
+    }
+    footer .container .all{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:10px
+    }
+}
+@media (max-width: 480px) {
+    .container{
+        width:  98%;
+    }
+    .podborka .container h1{
+        font-size:30px;
+    }
+    .subsribe .container h1{
+        font-size:35px;
+    }
+}

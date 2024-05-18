@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практика №4</title>
+    <link rel="stylesheet" href="./assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+    <header class="p-3 mb-3">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 mr-5 text-dark text-decoration-none">
+                    <svg width="76" height="15" viewBox="0 0 76 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M0.4 -9.53674e-07H4V11.04H10V14H0.4V-9.53674e-07ZM12.0063 -9.53674e-07H15.6063V14H12.0063V-9.53674e-07ZM17.4031 -9.53674e-07H21.4031L24.5631 9.4L27.6031 -9.53674e-07H31.2031L26.2031 14H22.6031L17.4031 -9.53674e-07ZM32.8023 -9.53674e-07H43.0023V2.76H36.4023V5.5H42.4023V8.1H36.4023V11.24H43.0023V14H32.8023V-9.53674e-07ZM47.1023 14.26C46.569 14.26 46.1157 14.08 45.7423 13.72C45.3823 13.3467 45.2023 12.8933 45.2023 12.36C45.2023 11.8267 45.3823 11.38 45.7423 11.02C46.1157 10.6467 46.569 10.46 47.1023 10.46C47.6357 10.46 48.0823 10.6467 48.4423 11.02C48.8157 11.38 49.0023 11.8267 49.0023 12.36C49.0023 12.8933 48.8157 13.3467 48.4423 13.72C48.0823 14.08 47.6357 14.26 47.1023 14.26ZM52.9773 2.96H48.6773V-9.53674e-07H60.8773V2.96H56.5773V14H52.9773V2.96ZM61.8758 -9.53674e-07H65.8758L69.0358 9.4L72.0758 -9.53674e-07H75.6758L70.6758 14H67.0758L61.8758 -9.53674e-07Z"
+                            fill="#6FB1FC" />
+                    </svg>
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 ml-3 ms-3 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-2 link-secondary text-white fs-16">Фильмы</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark text-white fs-16">Сериалы</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark text-white fs-16">Мультфильмы</a></li>
+                    <li><a href="#" class="nav-link px-2 link-dark text-white fs-16">Новинки</a></li>
+                </ul>
+                <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small">
+                    <li>
+                        <a href="#" class="nav-link text-secondary">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.5" stroke="#F0F0F0" />
+                                <path
+                                    d="M19.0482 18.0737L22 21.0248L21.0248 22L18.0737 19.0482C16.9757 19.9285 15.6099 20.4072 14.2026 20.4052C10.7788 20.4052 8 17.6265 8 14.2026C8 10.7788 10.7788 8 14.2026 8C17.6265 8 20.4052 10.7788 20.4052 14.2026C20.4072 15.6099 19.9285 16.9757 19.0482 18.0737ZM17.6657 17.5624C18.5404 16.6629 19.0289 15.4572 19.0269 14.2026C19.0269 11.5369 16.8677 9.37836 14.2026 9.37836C11.5369 9.37836 9.37836 11.5369 9.37836 14.2026C9.37836 16.8677 11.5369 19.0269 14.2026 19.0269C15.4572 19.0289 16.6629 18.5404 17.5624 17.6657L17.6657 17.5624Z"
+                                    fill="#F0F0F0" />
+                            </svg>
+                            Поиск
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.5" stroke="#F0F0F0" />
+                                <path
+                                    d="M20.3333 22H9.66667C9.48986 22 9.32029 21.9263 9.19526 21.795C9.07024 21.6637 9 21.4857 9 21.3V8.7C9 8.51435 9.07024 8.3363 9.19526 8.20503C9.32029 8.07375 9.48986 8 9.66667 8H20.3333C20.5101 8 20.6797 8.07375 20.8047 8.20503C20.9298 8.3363 21 8.51435 21 8.7V21.3C21 21.4857 20.9298 21.6637 20.8047 21.795C20.6797 21.9263 20.5101 22 20.3333 22ZM19.6667 20.6V9.4H10.3333V20.6H19.6667ZM13 10.8V12.2C13 12.757 13.2107 13.2911 13.5858 13.6849C13.9609 14.0788 14.4696 14.3 15 14.3C15.5304 14.3 16.0391 14.0788 16.4142 13.6849C16.7893 13.2911 17 12.757 17 12.2V10.8H18.3333V12.2C18.3333 13.1283 17.9821 14.0185 17.357 14.6749C16.7319 15.3313 15.8841 15.7 15 15.7C14.1159 15.7 13.2681 15.3313 12.643 14.6749C12.0179 14.0185 11.6667 13.1283 11.6667 12.2V10.8H13Z"
+                                    fill="#F0F0F0" />
+                            </svg>
+                            Мои покупки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link text-white">
+                            <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="15" cy="15" r="14.5" stroke="#F0F0F0" />
+                                <path
+                                    d="M10 22C10 20.5855 10.5268 19.229 11.4645 18.2288C12.4021 17.2286 13.6739 16.6667 15 16.6667C16.3261 16.6667 17.5979 17.2286 18.5355 18.2288C19.4732 19.229 20 20.5855 20 22H18.75C18.75 20.9391 18.3549 19.9217 17.6517 19.1716C16.9484 18.4214 15.9946 18 15 18C14.0054 18 13.0516 18.4214 12.3483 19.1716C11.6451 19.9217 11.25 20.9391 11.25 22H10ZM15 16C12.9281 16 11.25 14.21 11.25 12C11.25 9.79 12.9281 8 15 8C17.0719 8 18.75 9.79 18.75 12C18.75 14.21 17.0719 16 15 16ZM15 14.6667C16.3812 14.6667 17.5 13.4733 17.5 12C17.5 10.5267 16.3812 9.33333 15 9.33333C13.6187 9.33333 12.5 10.5267 12.5 12C12.5 13.4733 13.6187 14.6667 15 14.6667Z"
+                                    fill="#F0F0F0" />
+                            </svg>
+                            Мой аккаунт
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <section class="start">
+        <div class="container">
+            <div class="col-sm-12 col-md-6 col-xl-6 film">
+                <h1 class="text-white">НЕЗНАКОМЕЦ</h1>
+                <div class="categories d-flex">
+                    <span class="rating">
+                        <p class="text-white">8.9</p>
+                    </span>
+                    <span class="itd">
+                        <p>2020, США</p>
+                    </span>
+                    <span class="itd">
+                        <p>Триллер, драма</p>
+                    </span>
+                    <span class="itd">
+                        <p>113 мин</p>
+                    </span>
+                    <span class="age">
+                        <p>18+</p>
+                    </span>
+                </div>
+                <p class="text-white description mb-5"> Софи была счастлива в браке со своим мужем Генри. Пока однажды
+                    ей не пришло анонимное
+                    письмо, предупреждение, что ей нужно бежать от мужа. Пытаясь разгадать эту загадку,Софи впадает в
+                    ужас, ведь Генри оказывается совсем не тем человеком, которого она знает…
+                </p>
+                <div class="row d-flex gap-0.1">
+                    <div class="col">
+                        <button type="button" class="btn blue-button text-white d-flex align-items-center">
+                            <img src="./assets/img/play.svg" alt="">
+                            <p class="m-0">Смотреть онлайн</p>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn black-button text-white d-flex align-items-center">
+                            <img src="./assets/img/video.svg" alt="">
+                            <p class="m-0">Трейлер</p>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn red-button text-white d-flex align-items-center">
+                            <img src="./assets/img/bookmark.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="card">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-white mb-5">Рекомендуем посмотреть</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Под водой</h5>
+                            <p class="card-text color3">Приключения, семейный</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Мгла</h5>
+                            <p class="card-text">Ужасы, триллер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/4.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Охота</h5>
+                            <p class="card-text">Детектив, криминал, драма</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="./assets/img/5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-white">Синхронизация</h5>
+                            <p class="card-text"> Триллер, драмма</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="podborka">
+        <div class="container">
+            <div class="col-sm-12 col-md-6 col-xl-5 podka">
+                <span>
+                    <h1 class="text-white">КОСМИЧЕСКАЯ</h1>
+                    <h1 class="text-white">ПОДБОРКА</h1>
+                </span>
+                <p class="text-white">100 лучших фильмов о космосе, других планетах и инопланетян. Рейтинг составлен на
+                    основании оценок и
+                    рецензий пользователей Live.TV.</p>
+                <button type="button" class="btn blue-button text-white d-flex align-items-center">
+                    <p class="m-0">Смотреть подборку</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="top">
+        <div class="container d-lg-flex justify-content-between">
+            <div class="col-lg-5 col-md-12 mb-4">
+                <h1 class="text-white new">ОТКРЫТИЕ НЕДЕЛИ</h1>
+                <h1 class="text-white">БЕССОНИЦА</h1>
+                <div class="categories d-flex">
+                    <span class="rating">
+                        <p class="text-white">7.8</p>
+                    </span>
+                    <span class="itd">
+                        <p>2021, США</p>
+                    </span>
+                    <span class="itd">
+                        <p>Драма, триллер</p>
+                    </span>
+                    <span class="itd">
+                        <p>98 мин</p>
+                    </span>
+                    <span class="age">
+                        <p>18+</p>
+                    </span>
+                </div>
+                <p class="text-white description mb-0"> Софи была счастлива в браке со своим мужем Генри. Пока однажды
+                    ей не пришло анонимное
+                    письмо, предупреждение, что ей нужно бежать от мужа. Пытаясь разгадать эту загадку,Софи впадает в
+                    ужас, ведь Генри оказывается совсем не тем человеком, которого она знает…
+                </p>
+                <h1 class="text-white price">199 ₽</h1>
+                <div class="row d-flex gap-0.1 mb-5">
+                    <div class="col">
+                        <button type="button" class="btn blue-button text-white d-flex align-items-center">
+                            <img src="./assets/img/play.svg" alt="">
+                            <p class="m-0">Купить и смотреть</p>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn black-button text-white d-flex align-items-center">
+                            <img src="./assets/img/video.svg" alt="">
+                            <p class="m-0">Трейлер</p>
+                        </button>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn red-button text-white d-flex align-items-center">
+                            <img src="./assets/img/bookmark.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <input checked type="radio" name="name" id="input1">
+                <input type="radio" name="name" id="input2">
+                <input type="radio" name="name" id="input3">
+                <label class="me-3" for="input1" id="label1">ОПИСАНИЕ</label>
+                <label class="me-3" for="input2" id="label2">ДЕТАЛИ</label>
+                <label for="input3" id="label3">ОТЗЫВЫ</label>
+                <div class="perecluch">
+                    <div class="line mt-3">
+                        <div class="text text1">
+                            Самуэль уже забыл, когда высыпался последний раз. Он перестал понимать, где граница жизни, а
+                            где небытия. Но он пытается продолжать жить и работать, как ни в чем не бывало. Неожиданно в
+                            его жизни начали появляться необычные люди. На работе появился новый коллега, который
+                            общается только с ним. В доме появляется соседка, с которой у него закрутился роман. Самуэль
+                            продолжал жить и не обращал внимания на бессонницу. <br><br>Пока однажды в его жизни начали
+                            появляться не только новые люди, но и те, кто уже давно покинул этот мир. Теперь Самуэль
+                            пытается понять, где реальность, кто из всех окружающих его людей настоящий. И настоящий ли
+                            он сам? А может это все затянувшийся сон?
+                        </div>
+                        <div class="text text2">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa, sequi?
+                        </div>
+                        <div class="text text3">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit tempore facere
+                            accusamus ab voluptatibus vel quasi assumenda tenetur delectus error maiores libero mollitia
+                            quas ratione, quia incidunt enim eos eum explicabo, quae natus similique! Consequuntur
+                            maiores provident et numquam iure!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6  mb-3">
+                <img class="img-fluid mb-5" src="./assets/img/7.jpg">
+                <div class="row row-cols-2 d-flex justify-content-center">
+                    <div class="col mb-4">
+                        <img class="img-fluid" src="./assets/img/8.jpg">
+                    </div>
+                    <div class="col mb-4">
+                        <img class="img-fluid" src="./assets/img/9.jpg">
+                    </div>
+                    <div class="col mb-4">
+                        <img class="img-fluid" src="./assets/img/10.jpg">
+                    </div>
+                    <div class="col mb-4">
+                        <img class="img-fluid" src="./assets/img/11.jpg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="opisanie">
+        <div class="container py-5 justify-content-between d-lg-flex ">
+            <div class="col-lg-5 col-md-12 mb-3 d-flex justify-content-center">
+                <img class="img-fluid" src="./assets/img/12.png">
+            </div>
+            <div class="col-lg-6 col-md-12">
+                <h1 class="text-white mb-4">Live TV - это ваши любимые фильмы и сериалы в отличном качестве.</h1>
+                <p class="text-white">Эксклюзивные премьеры и любимые легендарные фильмы, под любое настроение и для
+                    зрителей всех
+                    возрастов и интересов. Лицензионное качество видео, отличная картинка, оригинальная озвучка,
+                    просмотр без рекламы на любом устройстве - все это доступно в видеосервисе Live TV. Оформите
+                    подписку и смотрите любое кино на 5 разных устройствах.</p>
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <h1 class="color">40 млн</h1>
+                        <p class="text-white">пользовтелей</p>
+                    </div>
+                    <div class="col">
+                        <h1 class="color">300 тысяч</h1>
+                        <p class="text-white">фильмов и сериалов</p>
+                    </div>
+                    <div class="col">
+                        <h1 class="color">100 +</h1>
+                        <p class="text-white">эксклюзивных проектов</p>
+                    </div>
+                    <div class="col">
+                        <h1 class="color">2 млрд часов</h1>
+                        <p class="text-white">просмотра за 2020 год</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="subsribe">
+        <div class="container">
+            <div class="row d-flex justify-content-between flex-row">
+                <h1 class="text-white">ОФОРМИТЕ ПОДПИСКУ</h1>
+                <div class="col-lg-5 col-md-12">
+                    <p class="text-white">Получите полный доступ к каталогу Live. Безупречное качество картинки и звука,
+                        одновременный просмотр
+                        на 5 устройствах, отсутствие рекламы, загрузка на устройства для офлайн-доступа.</p>
+                    <form class="mb-4">
+
+                        <div class="mb-3">
+                            <label for="exampleInputName1" class="form-label">Имя</label>
+                            <input type="text" class="form-control" id="exampleInputName1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPhone1" class="form-label">Телефон</label>
+                            <input type="phone" class="form-control" id="exampleInputPhone1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </form>
+                    <p class="text-white mb-2">Выберите тариф</p>
+                    <div class="col d-sm-flex justify-content-between mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                1 месяц
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                3 месяца
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                6 месяцев
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                12 месяцев
+                            </label>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Я согласен на обработку персональных
+                            данных</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-4">Оформить подписку</button>
+                </div>
+                <div class="col-lg-6 col-md-12 mt-4 prices">
+                    <div class="row row-cols-1 row-cols-md-2 g-4 first">
+                        <div class="col">
+                            <div class="vse d-flex justify-content-center align-items-center flex-column">
+                                <p class="text-white mb-4 mt-3">1 месяц</p>
+                                <h1 class="m-0">199 ₽</h1>
+                                <p class="text-white mb-3 mt-4 rub">199 ₽/месяц</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vse d-flex justify-content-center align-items-center flex-column">
+                                <p class="text-white mb-4 mt-3">3 месяца</p>
+                                <h1 class="m-0">529 ₽</h1>
+                                <p class="text-white mb-3 mt-4">176 ₽/месяц</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vse d-flex justify-content-center align-items-center flex-column">
+                                <p class="text-white mb-4 mt-3">6 месяцев</p>
+                                <h1 class="m-0">999 ₽</h1>
+                                <p class="text-white mb-3 mt-4">166 ₽/месяц</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="vse d-flex justify-content-center align-items-center flex-column">
+                                <p class="text-white mb-4 mt-3">12 месяцев</p>
+                                <h1 class="m-0">1790 ₽</h1>
+                                <p class="text-white mb-3 mt-4">149 ₽/месяц</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container pt-3 pb-3">
+            <!-- <div class="row row-cols-1 cols-md-3">
+                <div class="d-flex justify-content-between py-4 my-4 text-white all">
+                    <div class="left d-flex gap-4">
+                        <p>Line.TV © 2021 Все права защищены</p>
+                        <p class="text-decoration-underline">Политика конфиденциальности</p>
+                    </div>
+                    <ul class="list-unstyled d-flex gap-2">
+                        <li class="ms-3"><a class="link-dark" href="#"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.2222 17.7778H17.7778V2.22222H2.22222V17.7778H10V12.2222H7.77778V10H10V8.16222C10 6.67667 10.1556 6.13778 10.4444 5.59444C10.729 5.05687 11.1688 4.61743 11.7067 4.33333C12.1311 4.10556 12.6589 3.96889 13.5811 3.91C13.9467 3.88667 14.42 3.91556 15.0011 3.99889V6.11H14.4444C13.4256 6.11 13.0044 6.15778 12.7533 6.29222C12.6035 6.36929 12.4815 6.49127 12.4044 6.64111C12.2711 6.89222 12.2222 7.14111 12.2222 8.16111V10H15L14.4444 12.2222H12.2222V17.7778ZM1.11111 0H18.8889C19.1836 0 19.4662 0.117063 19.6746 0.325437C19.8829 0.533811 20 0.816426 20 1.11111V18.8889C20 19.1836 19.8829 19.4662 19.6746 19.6746C19.4662 19.8829 19.1836 20 18.8889 20H1.11111C0.816426 20 0.533811 19.8829 0.325437 19.6746C0.117063 19.4662 0 19.1836 0 18.8889V1.11111C0 0.816426 0.117063 0.533811 0.325437 0.325437C0.533811 0.117063 0.816426 0 1.11111 0Z"
+                                        fill="#F0F0F0" />
+                                </svg>
+                            </a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg width="20" height="20" viewBox="0 0 20 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10 7C9.20435 7 8.44129 7.31607 7.87868 7.87868C7.31607 8.44129 7 9.20435 7 10C7 10.7956 7.31607 11.5587 7.87868 12.1213C8.44129 12.6839 9.20435 13 10 13C10.7956 13 11.5587 12.6839 12.1213 12.1213C12.6839 11.5587 13 10.7956 13 10C13 9.20435 12.6839 8.44129 12.1213 7.87868C11.5587 7.31607 10.7956 7 10 7ZM10 5C11.3261 5 12.5979 5.52678 13.5355 6.46447C14.4732 7.40215 15 8.67392 15 10C15 11.3261 14.4732 12.5979 13.5355 13.5355C12.5979 14.4732 11.3261 15 10 15C8.67392 15 7.40215 14.4732 6.46447 13.5355C5.52678 12.5979 5 11.3261 5 10C5 8.67392 5.52678 7.40215 6.46447 6.46447C7.40215 5.52678 8.67392 5 10 5ZM16.5 4.75C16.5 5.08152 16.3683 5.39946 16.1339 5.63388C15.8995 5.8683 15.5815 6 15.25 6C14.9185 6 14.6005 5.8683 14.3661 5.63388C14.1317 5.39946 14 5.08152 14 4.75C14 4.41848 14.1317 4.10054 14.3661 3.86612C14.6005 3.6317 14.9185 3.5 15.25 3.5C15.5815 3.5 15.8995 3.6317 16.1339 3.86612C16.3683 4.10054 16.5 4.41848 16.5 4.75ZM10 2C7.526 2 7.122 2.007 5.971 2.058C5.187 2.095 4.661 2.2 4.173 2.39C3.739 2.558 3.426 2.759 3.093 3.093C2.78001 3.3954 2.53935 3.76458 2.389 4.173C2.199 4.663 2.094 5.188 2.058 5.971C2.006 7.075 2 7.461 2 10C2 12.474 2.007 12.878 2.058 14.029C2.095 14.812 2.2 15.339 2.389 15.826C2.559 16.261 2.759 16.574 3.091 16.906C3.428 17.242 3.741 17.443 4.171 17.609C4.665 17.8 5.191 17.906 5.971 17.942C7.075 17.994 7.461 18 10 18C12.474 18 12.878 17.993 14.029 17.942C14.811 17.905 15.338 17.8 15.826 17.611C16.259 17.442 16.574 17.241 16.906 16.909C17.243 16.572 17.444 16.259 17.61 15.829C17.8 15.336 17.906 14.809 17.942 14.029C17.994 12.925 18 12.539 18 10C18 7.526 17.993 7.122 17.942 5.971C17.905 5.189 17.8 4.661 17.61 4.173C17.4593 3.765 17.2191 3.39596 16.907 3.093C16.6047 2.77985 16.2355 2.53917 15.827 2.389C15.337 2.199 14.811 2.094 14.029 2.058C12.925 2.006 12.539 2 10 2ZM10 0C12.717 0 13.056 0.00999994 14.122 0.0599999C15.187 0.11 15.912 0.277 16.55 0.525C17.21 0.779 17.766 1.123 18.322 1.678C18.8305 2.1779 19.224 2.78259 19.475 3.45C19.722 4.087 19.89 4.813 19.94 5.878C19.987 6.944 20 7.283 20 10C20 12.717 19.99 13.056 19.94 14.122C19.89 15.187 19.722 15.912 19.475 16.55C19.2247 17.2178 18.8311 17.8226 18.322 18.322C17.822 18.8303 17.2173 19.2238 16.55 19.475C15.913 19.722 15.187 19.89 14.122 19.94C13.056 19.987 12.717 20 10 20C7.283 20 6.944 19.99 5.878 19.94C4.813 19.89 4.088 19.722 3.45 19.475C2.78233 19.2245 2.17753 18.8309 1.678 18.322C1.16941 17.8222 0.775931 17.2175 0.525 16.55C0.277 15.913 0.11 15.187 0.0599999 14.122C0.0129999 13.056 0 12.717 0 10C0 7.283 0.00999994 6.944 0.0599999 5.878C0.11 4.812 0.277 4.088 0.525 3.45C0.775236 2.78218 1.1688 2.17732 1.678 1.678C2.17767 1.16923 2.78243 0.775729 3.45 0.525C4.088 0.277 4.812 0.11 5.878 0.0599999C6.944 0.0129999 7.283 0 10 0Z"
+                                        fill="#F0F0F0" />
+                                </svg>
+                            </a></li>
+                        <li class="ms-3"><a class="link-dark" href="#"><svg width="24" height="20" viewBox="0 0 24 20"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M21.1272 3.74375C21.036 3.37125 20.7768 3.09 20.4804 3.00375C19.956 2.85 17.4 2.5 12 2.5C6.6 2.5 4.0464 2.85 3.5172 3.00375C3.2244 3.08875 2.9652 3.37 2.8728 3.74375C2.742 4.27375 2.4 6.495 2.4 10C2.4 13.505 2.742 15.725 2.8728 16.2575C2.964 16.6287 3.2232 16.91 3.5184 16.995C4.0464 17.15 6.6 17.5 12 17.5C17.4 17.5 19.9548 17.15 20.4828 16.9963C20.7756 16.9113 21.0348 16.63 21.1272 16.2562C21.258 15.7262 21.6 13.5 21.6 10C21.6 6.5 21.258 4.275 21.1272 3.74375ZM23.4516 3.1225C24 5.35 24 10 24 10C24 10 24 14.65 23.4516 16.8775C23.1468 18.1088 22.2552 19.0775 21.126 19.405C19.0752 20 12 20 12 20C12 20 4.9284 20 2.874 19.405C1.74 19.0725 0.8496 18.105 0.5484 16.8775C3.57628e-08 14.65 0 10 0 10C0 10 3.57628e-08 5.35 0.5484 3.1225C0.8532 1.89125 1.7448 0.9225 2.874 0.595C4.9284 -2.23517e-07 12 0 12 0C12 0 19.0752 -2.23517e-07 21.126 0.595C22.26 0.9275 23.1504 1.895 23.4516 3.1225ZM9.6 14.375V5.625L16.8 10L9.6 14.375Z"
+                                        fill="#F0F0F0" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="d-flex justify-content-between py-4 text-white all">
+                <span class="gap-3 d-flex align-items-center"><p class="m-0">Live.TV © 2021 Все права защищены</p><p class="m-0">Политика конфиденциальности</p> </span>
+                <ul class="list-unstyled d-flex align-items-center mb-0">
+                  <li class="ms-3"><a class="link-dark" href="#"><img src="./assets/img/facebook.svg"></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><img src="./assets/img/instagram.svg"></a></li>
+                  <li class="ms-3"><a class="link-dark" href="#"><img src="./assets/img/youtube.svg"></a></li>
+                </ul>
+              </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
